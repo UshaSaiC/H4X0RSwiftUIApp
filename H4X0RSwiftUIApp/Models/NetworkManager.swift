@@ -7,7 +7,13 @@
 
 import Foundation
 
-class NetworkManager{
+// in order to pass data from this manager to contents view, we use ObservableObject protocol
+// it helps in broadcasting one or many of its properties to interested properties
+
+class NetworkManager: ObservableObject{
+    
+    // published tag helps in publishing the properties
+    @Published var posts = [Post]()
     
     func fetchData(){
         if let url = URL(string: "https://hn.algolia.com/api/v1/search?tags=front_page"){
@@ -20,6 +26,9 @@ class NetworkManager{
                     if let safeData = data{
                         do {
                     let results = try decoder.decode(Results.self, from: safeData)
+                            DispatchQueue.main.async {
+                                self.posts = results.hits
+                            }
                         }catch{
                             print(error)
                         }
