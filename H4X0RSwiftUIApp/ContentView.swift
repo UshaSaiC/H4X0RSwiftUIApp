@@ -24,12 +24,6 @@ struct ContentView: View {
         }
     }
     
-    // Identifiable helps in figuring out the objects based on id instead of some random order. For a struct to be identifiable it should have id property of type string
-    struct Post: Identifiable {
-        let id: String
-        let title: String
-    }
-    
     let posts = [
         Post(id: "1", title: "H1"),
         Post(id: "2", title: "H2"),
