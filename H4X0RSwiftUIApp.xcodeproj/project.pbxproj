@@ -13,6 +13,8 @@
 		B2FC7C4A28CE323200EE6529 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2FC7C4928CE323200EE6529 /* Preview Assets.xcassets */; };
 		B2FC7C5228CE386900EE6529 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FC7C5128CE386900EE6529 /* NetworkManager.swift */; };
 		B2FC7C5428CE39EB00EE6529 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FC7C5328CE39EB00EE6529 /* PostData.swift */; };
+		B2FC7C5728CE40F500EE6529 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FC7C5628CE40F500EE6529 /* DetailView.swift */; };
+		B2FC7C5928CE442600EE6529 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FC7C5828CE442600EE6529 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		B2FC7C4928CE323200EE6529 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B2FC7C5128CE386900EE6529 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		B2FC7C5328CE39EB00EE6529 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		B2FC7C5628CE40F500EE6529 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		B2FC7C5828CE442600EE6529 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +61,7 @@
 			children = (
 				B2FC7C5028CE384600EE6529 /* Models */,
 				B2FC7C4228CE322F00EE6529 /* H4X0RSwiftUIAppApp.swift */,
-				B2FC7C4428CE322F00EE6529 /* ContentView.swift */,
+				B2FC7C5528CE40E100EE6529 /* Views */,
 				B2FC7C4628CE323200EE6529 /* Assets.xcassets */,
 				B2FC7C4828CE323200EE6529 /* Preview Content */,
 			);
@@ -79,6 +83,16 @@
 				B2FC7C5328CE39EB00EE6529 /* PostData.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		B2FC7C5528CE40E100EE6529 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B2FC7C4428CE322F00EE6529 /* ContentView.swift */,
+				B2FC7C5628CE40F500EE6529 /* DetailView.swift */,
+				B2FC7C5828CE442600EE6529 /* WebView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +168,8 @@
 				B2FC7C5228CE386900EE6529 /* NetworkManager.swift in Sources */,
 				B2FC7C5428CE39EB00EE6529 /* PostData.swift in Sources */,
 				B2FC7C4528CE322F00EE6529 /* ContentView.swift in Sources */,
+				B2FC7C5928CE442600EE6529 /* WebView.swift in Sources */,
+				B2FC7C5728CE40F500EE6529 /* DetailView.swift in Sources */,
 				B2FC7C4328CE322F00EE6529 /* H4X0RSwiftUIAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
