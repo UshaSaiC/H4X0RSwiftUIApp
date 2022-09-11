@@ -1,20 +1,13 @@
-//
-//  ContentView.swift
-//  H4X0RSwiftUIApp
-//
-//  Created by Usha Sai Chintha on 11/09/22.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
         // NavigationView helps in navigating between screens and we can easily go back to previous screen via this
         NavigationView{
-            //            List{
-            //                Text("Hello, world1!")
-            //                Text("Hello, world1!")
-            //            }
+            // List{
+            //   Text("Hello, world1!")
+            //   Text("Hello, world1!")
+            //}
             
             // below we are looping through posts array and printing its text in a list view
             List(posts) { post in
@@ -22,7 +15,6 @@ struct ContentView: View {
             }
             .listStyle(PlainListStyle())
             .navigationBarTitle("H4X0R NEWS")
-            .background(.purple)
         }
     }
     
